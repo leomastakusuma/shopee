@@ -67,7 +67,6 @@ export default class Authcontroller extends abstractController {
 				
 				listOrders.forEach(element => {
 					if(element.tax_code == 1){
-						console.log(element.type)
 						tax = 0.1 * element.price
 					}
 					else if(element.tax_code == 2){

@@ -15,7 +15,9 @@
         "dirname":true,
         "process":true,
         "__dirname":true,
-        "function":true
+        "function":true,
+        "describe":true,
+        "it":true
     },
     "rules": {
         "indent": [

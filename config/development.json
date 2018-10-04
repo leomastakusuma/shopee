@@ -6,6 +6,6 @@
         "user": "root",
         "pass": "2123"
     },
-    "queryLog": 1,
+    "queryLog": 0,
     "port": 3000
 }

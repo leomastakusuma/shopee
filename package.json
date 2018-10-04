@@ -19,10 +19,13 @@
     },
     "devDependencies": {
         "babel-cli": "^6.0.0",
+        "chai": "^3.5.0",
+        "chai-http": "^4.2.0",
+        "mocha": "^5.2.0",
         "nodemon": "^1.18.4"
     },
     "scripts": {
-        "test": "npm test",
+        "test": "mocha --compilers js:babel-core/register",
         "start": "nodemon --exec  babel-node  server.js"
     },
     "repository": {

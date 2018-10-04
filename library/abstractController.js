@@ -17,7 +17,7 @@ export default class abstractController extends abstractResponse {
 		return isValid
 	}
 
-    /**
+	/**
 	 * @description Validate String Empty
 	 */
 	isStringEmpty(value){
