@@ -1,0 +1,11 @@
+{
+    "dbConfig": {
+        "host": "localhost",
+        "port": 3306,
+        "dbName": "shopee",
+        "user": "root",
+        "pass": "2123"
+    },
+    "queryLog": 1,
+    "port": 3000
+}
