@@ -4,8 +4,8 @@
         "port": 3306,
         "dbName": "shopee",
         "user": "root",
-        "pass": "2123"
+        "pass": ""
     },
     "queryLog": 0,
-    "port": 3000
+    "port": 8080
 }
