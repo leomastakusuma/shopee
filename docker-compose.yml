@@ -1,0 +1,15 @@
+version: '2.1'
+services:
+    mysql:
+        build: ./database
+        environment:
+            - MYSQL_ALLOW_EMPTY_PASSWORD=yes
+        healthcheck:
+            test: "exit 0"
+    
+    api:
+        build: .
+        depends_on:
+            - mysql
+        ports:
+            - "8080:8080"
