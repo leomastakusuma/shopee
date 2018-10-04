@@ -1,23 +1,21 @@
 version: '3'
 services:
-  api-shopee:
+  api-spopee:
     build: .
     depends_on:
         - mysql
-    container_name: api-shopee
+    container_name: api-spopee
     environment:
-		MYSQL: mysql
-	links:
-		- mysql
+      MYSQL: mysql
     ports:
         - "8080:8080"
+    links:
+        - mysql    
 
   mysql:
-    build: ./database
-    container_name: mysql
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
     environment:
-      	MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
-
-
-
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
     

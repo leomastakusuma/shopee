@@ -12,5 +12,7 @@ RUN npm install babel-cli -g
 RUN npm install nodemon -g
 ENV NODE_ENV development
 
+COPY init_db.sql /docker-entrypoint-initdb.d/
+
 RUN rm -rf /var/cache/apk/*
 CMD [ "npm", "start" ]
