@@ -7,7 +7,7 @@ chai.use(chaiHttp)
 describe("Orders", () => {
 	describe("Create Orders", () => {
 		it("Post Orders", (done) => {
-			chai.request(server)
+			chai.request("http://localhost:8080")
 				.post("/v1/orders")
 				.set("Content-Type", "application/json")
 				.send({

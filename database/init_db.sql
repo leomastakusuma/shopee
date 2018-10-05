@@ -1,5 +1,5 @@
 CREATE DATABASE IF NOT EXISTS shopee;
-GRANT ALL PRIVILEGES on shopee.* TO 'root'@'%'  WITH GRANT OPTION;
+GRANT ALL PRIVILEGES on shopee . * TO 'root'@'%'  WITH GRANT OPTION;
 
 USE shopee;
 
