@@ -64,4 +64,3 @@ try {
 	console.log("API Start On PORT  " + port2)
 }
 
-module.exports = app // for testing

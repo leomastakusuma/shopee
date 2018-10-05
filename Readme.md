@@ -9,8 +9,11 @@ $ cd shopee
 ### RUN with Docker 
 ```sh
 $ docker-compose build 
-$ docker run -it -d --restart=always  --name="Squad" -p 8081:8080 Squad
+$ docker-compose up -d 
 ```
-
-
+### Note 
+```sh
+$ collection : https://www.getpostman.com/collections/cf06528fc5c87b38f697
+$ docs       : https://documenter.getpostman.com/view/102475/RWgnWeza
+```
 
